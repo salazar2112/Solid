@@ -1,3 +1,11 @@
+#O Princípio de Substituição de Liskov diz que os objetos de uma classe derivada devem ser 
+#substituíveis por objetos da classe base sem interferir no funcionamento do programa,
+#e isso está acontecendo no código. As classes derivadas (Atacante, Zagueiro e Goleiro) substituem a classe 
+#base (Jogador) de forma que, quando uma instância dessas classes derivadas é passada para a função
+#acao_do_jogo, o comportamento esperado é mantido.
+#Isso significa que a função acao_do_jogo pode aceitar qualquer instância de Jogador
+#(ou de suas subclasses) sem problemas, pois todas elas implementam o método jogar() de maneira apropriada.
+
 #código que respeita o principio de Liskov:
 class Jogador:
     def jogar(self):
@@ -30,10 +38,15 @@ if __name__ == "__main__":
     acao_do_jogo(goleiro)
 
 
-#código que não respeita o principio de Liskov:
-#não respeita o principio, porque coloquei uma classe(JogadorReserva), e quando
-#essa classe é usada com a função acao_do_jogo(), ela não se comporta como as outras 
-#classes (Atacante, Zagueiro e Goleiro) e não segue o mesmo padrão de comportamento. 
+
+# Já essa versão, não respeita o principio, porque coloquei uma classe(Gandula),e ela não se comporta como as 
+#outras classes (Atacante, Zagueiro e Goleiro) e não segue o mesmo padrão de comportamento. 
+# Enquanto as classes Atacante, Zagueiro e Goleiro representam diferentes posições em um jogo de futebol
+# e têm um comportamento relacionado a essa posição, a classe Gandula não representa uma posição de jogador
+# e tem um comportamento diferente. 
+
+# código que não respeita o principio de Liskov:
+
 class Jogador:
     def jogar(self):
         pass
@@ -63,7 +76,7 @@ if __name__ == "__main__":
     zagueiro = Zagueiro()
     goleiro = Goleiro()
     gandula = Gandula()
-    
+
     acao_do_jogo(atacante)
     acao_do_jogo(zagueiro)
     acao_do_jogo(goleiro)
