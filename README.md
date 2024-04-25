@@ -1,8 +1,8 @@
-# Princípios SOLID
+# Princípios de Design de Software
 
-Este repositório contém exemplos de código para ilustrar os princípios SOLID da programação orientada a objetos.
+Este repositório contém exemplos de código para ilustrar vários princípios de design de software.
 
-## O que são os Princípios SOLID?
+## Princípios SOLID
 
 Os Princípios SOLID são um conjunto de cinco princípios de design de software que visam criar sistemas mais compreensíveis, flexíveis e fáceis de manter. Esses princípios foram introduzidos por Robert C. Martin (também conhecido como Uncle Bob) e são amplamente adotados na indústria de desenvolvimento de software.
 
@@ -18,36 +18,20 @@ Os cinco princípios SOLID são:
 
 5. **D - Princípio da Inversão de Dependência (Dependency Inversion Principle - DIP):** Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. Além disso, abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
 
+## Outros Princípios
+
+Além dos princípios SOLID, também são importantes considerar outros princípios de design de software:
+
+6. **Princípio de Demeter (Law of Demeter):** Também conhecido como "Não fale com estranhos", esse princípio afirma que um objeto deve ter conhecimento limitado sobre outros objetos e deve interagir apenas com seus amigos imediatos. Isso ajuda a reduzir o acoplamento e aumentar a coesão.
+
+7. **Prefira Composição sobre Herança:** Em muitos casos, é preferível utilizar a composição em vez da herança para reutilizar comportamentos. A composição permite uma maior flexibilidade e extensibilidade do código, enquanto a herança pode levar a um acoplamento excessivo e hierarquias complexas.
+
 ## Exemplos
 
-Este repositório contém exemplos de código para ilustrar cada um dos princípios SOLID. Cada princípio é exemplificado com código em uma linguagem específica.
-
-1. **SRP:**
-   - Exemplo em [Python](/srp/python)
-   - Exemplo em [Java](/srp/java)
-
-2. **OCP:**
-   - Exemplo em [Python](/ocp/python)
-   - Exemplo em [Java](/ocp/java)
-
-3. **LSP:**
-   - Exemplo em [Python](/lsp/python)
-   - Exemplo em [Java](/lsp/java)
-
-4. **ISP:**
-   - Exemplo em [Python](/isp/python)
-   - Exemplo em [Java](/isp/java)
-
-5. **DIP:**
-   - Exemplo em [Python](/dip/python)
-   - Exemplo em [Java](/dip/java)
+Este repositório contém exemplos de código para ilustrar 4 dos princípios mencionados. Cada princípio é exemplificado com código em python.
 
 Cada exemplo contém uma breve descrição do princípio, seguido por implementações de código que demonstram como aplicar o princípio em um cenário específico.
 
-## Contribuições
 
-Contribuições são bem-vindas! Se você tiver exemplos adicionais ou melhorias nos exemplos existentes, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
